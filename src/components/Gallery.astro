@@ -52,3 +52,37 @@
     </div>
 
 </section>
+
+---
+const { images = [], galleryId = "gallery" } = Astro.props;
+---
+
+<div class="gallery-grid">
+  {images.map((image) => (
+    <a
+      href={image.src}
+      data-pswp-width={image.width}
+      data-pswp-height={image.height}
+      target="_blank"
+    >
+      <img
+        src={image.src}
+        alt={image.alt}
+        loading="lazy"
+      />
+    </a>
+  ))}
+</div>
+
+<script type="module">
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import 'photoswipe/style.css';
+
+const lightbox = new PhotoSwipeLightbox({
+    gallery: '.gallery-grid',
+    children: 'a',
+    pswpModule: () => import('photoswipe')
+});
+
+lightbox.init();
+</script>
