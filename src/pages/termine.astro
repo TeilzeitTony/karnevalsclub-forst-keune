@@ -1,0 +1,88 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout title="Termine">
+
+<PageHero
+    title="Termine"
+    subtitle="Unsere Veranstaltungen und Auftritte"
+    image="/termine-header.jpg"
+/>
+
+<section class="container">
+
+    <h2>Kommende Termine</h2>
+
+  <div class="event-highlight">
+
+<img
+    id="eventFlyer"
+    src="/events/summer-night-2026.jpg"
+    alt="KCK Summer Night 2026"
+/>
+
+<div id="flyerModal" class="flyer-modal">
+
+    <span class="close-flyer">&times;</span>
+
+    <img
+        id="flyerImage"
+        src="/events/summer-night-2026.jpg"
+        alt="KCK Summer Night"
+    />
+
+</div>
+
+
+
+        <div class="event-card">
+
+            <div class="event-date">
+                <span class="day">--</span>
+                <span class="month">2027</span>
+            </div>
+
+            <div class="event-content">
+                <h3>Weitere Termine folgen</h3>
+                <p>Neue Veranstaltungen werden hier veröffentlicht.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+const flyer = document.getElementById("eventFlyer");
+const modal = document.getElementById("flyerModal");
+const close = document.querySelector(".close-flyer");
+
+flyer?.addEventListener("click", () => {
+
+    modal.style.display = "flex";
+
+});
+
+close?.addEventListener("click", () => {
+
+    modal.style.display = "none";
+
+});
+
+modal?.addEventListener("click", (e) => {
+
+    if(e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+</script>
+
+</Layout>

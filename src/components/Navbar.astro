@@ -1,0 +1,31 @@
+---
+const currentPath = Astro.url.pathname;
+---
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <img src="/logo.png" alt="Karnevalsclub Keune Logo" />
+
+        <h2>Karnevalsclub Keune</h2>
+
+    </div>
+
+    <nav>
+
+        <a class={currentPath === "/" ? "active" : ""} href="/">Start</a>
+
+        <a class={currentPath === "/verein" ? "active" : ""} href="/verein">Verein</a>
+
+        <a class={currentPath === "/tanzgruppen" ? "active" : ""} href="/tanzgruppen">Tanzgruppen</a>
+
+        <a class={currentPath === "/termine" ? "active" : ""} href="/termine">Termine</a>
+
+        <a class={currentPath === "/galerie" ? "active" : ""} href="/galerie">Galerie</a>
+
+        <a class={currentPath === "/kontakt" ? "active" : ""} href="/kontakt">Kontakt</a>
+
+    </nav>
+
+</header>

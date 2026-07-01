@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout title="Alice im Wunderland">
+
+<PageHero
+    title="Alice im Wunderland"
+    subtitle="Showprogramm 2026 / 2027"
+    image="/alice-header.jpg"
+    leftImage="/galerie/alice/1.jpg"
+    rightImage="/galerie/alice/2.jpg"
+/>
+
+<section class="container">
+
+    <h2>Über das Programm</h2>
+
+    <p>
+        Mit „Alice im Wunderland“ entführt das Forster Männerballett sein Publikum
+        in eine fantasievolle Welt voller Magie, verrückter Charaktere und
+        beeindruckender Choreografien. Farbenfrohe Kostüme, bekannte Figuren
+        und jede Menge Humor machen dieses Programm zu einem ganz besonderen
+        Erlebnis.
+    </p>
+
+</section>
+
+<section class="container">
+
+<h2>Impressionen aus „Alice im Wunderland“</h2>
+
+<p class="groups-text">
+    Einige Eindrücke aus unserem aktuellen Showprogramm.
+</p>
+
+<div class="alice-gallery">
+
+    <img src="/galerie/alice/1.jpg" alt="Alice Bild 1">
+    <img src="/galerie/alice/2.jpg" alt="Alice Bild 2">
+    <img src="/galerie/alice/3.jpg" alt="Alice Bild 3">
+    <img src="/galerie/alice/4.jpg" alt="Alice Bild 4">
+    <img src="/galerie/alice/5.jpg" alt="Alice Bild 5">
+    <img src="/galerie/alice/6.jpg" alt="Alice Bild 6">
+
+</div>
+
+<div id="lightbox" class="lightbox">
+
+    <span id="closeLightbox">&times;</span>
+
+    <span id="prevImage" class="lightbox-arrow left">&#10094;</span>
+
+    <img id="lightboxImage" src="" alt="Großes Bild">
+
+    <span id="nextImage" class="lightbox-arrow right">&#10095;</span>
+
+</div>
+
+</section>
+
+<audio id="aliceSound">
+    <source src="/sounds/alice.mp3" type="audio/mpeg">
+</audio>
+
+</Layout>

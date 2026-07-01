@@ -1,0 +1,136 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout title="Kontakt">
+
+<PageHero
+    title="Kontakt"
+    subtitle="Wir freuen uns auf deine Nachricht!"
+    image="/kontakt-header.jpg"
+/>
+
+<section class="container">
+
+    <div class="contact-grid">
+
+        <!-- Verein -->
+        <div class="contact-card">
+
+            <h2>📍 Verein</h2>
+
+            <p>
+                <strong>Karnevalsclub Keune</strong><br>
+                Schacksdorfer Straße 45<br>
+                03149 Forst (Lausitz)
+            </p>
+
+        </div>
+
+        <!-- E-Mail -->
+        <div class="contact-card">
+
+            <h2>📧 E-Mail</h2>
+
+            <p>
+
+                <a
+                    href="mailto:forster-maennerballett@web.de"
+                    class="email-link"
+                >
+                    forster-maennerballett@web.de
+                </a>
+
+            </p>
+
+        </div>
+
+        <!-- Social Media -->
+        <div class="contact-card">
+
+            <h2>📱 Instagram</h2>
+
+            <a
+                href="https://www.instagram.com/kc_keune_forst/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+            >
+
+                <img
+                    src="/icons/instagram.png"
+                    alt="Instagram"
+                    class="social-icon"
+                />
+
+                <div>
+
+                    <strong>@kc_keune_forst</strong>
+
+                    <p>
+                        Folge uns für aktuelle Fotos,
+                        Veranstaltungen und Einblicke
+                        in unser Vereinsleben.
+                    </p>
+
+                </div>
+
+            </a>
+
+        </div>
+
+        <!-- Mitglied werden -->
+        <div class="contact-card">
+
+            <h2>🎭 Mitglied werden</h2>
+
+            <p>
+                Du möchtest Teil unseres Vereins werden oder uns unterstützen?
+                Dann freuen wir uns auf deine Nachricht.
+            </p>
+
+            <a
+                href="mailto:forster-maennerballett@web.de?subject=Interesse am Karnevalsclub Keune"
+                class="button"
+            >
+                💛 Jetzt unverbindlich Kontakt aufnehmen
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container">
+
+    <h2>🗺️ So findest du uns</h2>
+
+    <div class="map-container">
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1993.8600010204939!2d14.659612117793229!3d51.71252569735163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47087e8830bd75e5%3A0x16eaf60f6b5b68aa!2sSchacksdorfer%20Str.%2045%2C%2003149%20Forst%20(Lausitz)-Keune!5e0!3m2!1sde!2sde!4v1782828341992!5m2!1sde!2sde"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
+
+    </div>
+
+    <div style="text-align:center; margin-top:30px;">
+
+        <a
+            href="https://www.google.com/maps/dir/?api=1&destination=Schacksdorfer+Straße+45,+03149+Forst+(Lausitz)"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+        >
+            🧭 Route planen
+        </a>
+
+    </div>
+
+</section>
+
+</Layout>

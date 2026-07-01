@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout title="Vereinsarchiv">
+
+<PageHero
+    title="Vereinsarchiv"
+    subtitle="Erinnerungen an unsere schönsten Momente"
+    image="/galerie-header.jpg"
+/>
+
+<section class="container">
+
+    <h2>Unsere Alben</h2>
+
+    <p class="groups-text">
+        Hier findet ihr die schönsten Erinnerungen aus unserem Vereinsleben.
+    </p>
+
+    <div class="album-grid">
+
+        <a href="/alice-im-wunderland" class="album-card">
+
+            <img src="/alice-cover.jpg" alt="Alice im Wunderland">
+
+            <div class="album-overlay">
+
+                <span class="album-year">2026 / 2027</span>
+
+                <h3>Alice im Wunderland</h3>
+
+                <p>6 Bilder</p>
+
+            </div>
+
+        </a>
+
+        <a href="#" class="album-card">
+
+            <img src="/events/summer-night-2026.jpg" alt="Summer Night">
+
+            <div class="album-overlay">
+
+                <span class="album-year">2026</span>
+
+                <h3>KCK Summer Night</h3>
+
+                <p>Album folgt</p>
+
+            </div>
+
+        </a>
+
+        <a href="#" class="album-card">
+
+            <img src="/meisterschaft-cover.jpg" alt="Meisterschaften">
+
+            <div class="album-overlay">
+
+                <span class="album-year">2026</span>
+
+                <h3>Meisterschaften</h3>
+
+                <p>Album folgt</p>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+</Layout>
