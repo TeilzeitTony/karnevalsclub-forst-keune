@@ -62,29 +62,6 @@ import PageHero from "../components/PageHero.astro";
 
 </section>
 
-<Gallery
-    images={[
-        {
-            src: "/galerie/maennerballett/alice1.jpg",
-            width: 1600,
-            height: 1067,
-            alt: "Alice im Wunderland"
-        },
-        {
-            src: "/galerie/maennerballett/alice2.jpg",
-            width: 1600,
-            height: 1067,
-            alt: "Alice im Wunderland"
-        },
-        {
-            src: "/galerie/maennerballett/alice3.jpg",
-            width: 1600,
-            height: 1067,
-            alt: "Alice im Wunderland"
-        }
-    ]}
-/>
-
 <section class="container">
 
     <h2>Unsere Erfolge</h2>
@@ -92,36 +69,26 @@ import PageHero from "../components/PageHero.astro";
     <div class="success-grid">
 
         <div class="success-card">
-
             <span class="success-icon">🥈</span>
-
             <h3>Deutscher Vizemeister</h3>
-
             <p>Hanau 2026</p>
-
         </div>
 
         <div class="success-card">
-
             <span class="success-icon">🏆</span>
-
             <h3>Ostdeutsche Meisterschaft</h3>
-
             <p>Erfolgreiche Teilnahme</p>
-
         </div>
 
         <div class="success-card">
-
             <span class="success-icon">📺</span>
-
             <h3>TV-Auftritt</h3>
-
             <p>rbb Brandenburg</p>
-
         </div>
 
     </div>
+
+</section>
 
 <section class="container">
 
@@ -129,7 +96,7 @@ import PageHero from "../components/PageHero.astro";
 
     <div class="dance-card">
 
-        <img src="/alice-im-wunderland.jpg" alt="Alice im Wunderland">
+        <img src="/alice-im-wunderland.jpg" alt="Alice im Wunderland" />
 
         <div class="dance-content">
 
@@ -143,17 +110,13 @@ import PageHero from "../components/PageHero.astro";
                 Showchoreografie.
             </p>
 
-            <a href="#" class="button">
-                Mehr erfahren
-            </a>
-
         </div>
 
     </div>
 
     <div class="dance-card">
 
-        <img src="/big-in-japan.jpg" alt="Big in Japan">
+        <img src="/big-in-japan.jpg" alt="Big in Japan" />
 
         <div class="dance-content">
 
@@ -166,16 +129,28 @@ import PageHero from "../components/PageHero.astro";
                 Publikum und erreichte den Titel des Deutschen Vizemeisters.
             </p>
 
-            <a href="#" class="button">
-                Mehr erfahren
-            </a>
-
         </div>
 
     </div>
 
 </section>
 
-</section>
+<Gallery
+    title="Bildergalerie"
+    images={[
+        {
+            src: "/galerie/maennerballett/alice1.jpg",
+            alt: "Alice im Wunderland"
+        },
+        {
+            src: "/galerie/maennerballett/alice2.jpg",
+            alt: "Alice im Wunderland"
+        },
+        {
+            src: "/galerie/maennerballett/alice3.jpg",
+            alt: "Alice im Wunderland"
+        }
+    ]}
+/>
 
 </Layout>

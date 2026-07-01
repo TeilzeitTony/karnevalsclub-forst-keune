@@ -1,88 +1,36 @@
-<section class="gallery">
+---
+interface Image {
+  src: string;
+  alt: string;
+}
 
-    <div class="section-title">
-        <h2>Galerie</h2>
-        <p>Erinnerungen an unsere schönsten Momente.</p>
-    </div>
+interface Props {
+  title?: string;
+  images?: Image[];
+}
+
+const {
+  title = "Bildergalerie",
+  images = []
+} = Astro.props;
+---
+
+<section class="gallery-section">
+
+    <h2>{title}</h2>
 
     <div class="gallery-grid">
 
-        <div class="album-card">
+        {images.map((image) => (
 
-            <img src="/meisterschaft2026.jpg" alt="Meisterschaft 2026">
+            <img
+                src={image.src}
+                alt={image.alt}
+                loading="lazy"
+            />
 
-            <div class="album-overlay">
-
-                <span class="album-count">📸 28 Bilder</span>
-
-                <h3>Ostdeutsche Meisterschaft 2026</h3>
-
-            </div>
-
-        </div>
-
-        <div class="album-card">
-
-            <img src="/session2027.jpg" alt="Session 2027">
-
-            <div class="album-overlay">
-
-                <span class="album-count">📸 42 Bilder</span>
-
-                <h3>Karnevalssession 2027</h3>
-
-            </div>
-
-        </div>
-
-        <div class="album-card">
-
-            <img src="/sommerfest.jpg" alt="Sommerfest">
-
-            <div class="album-overlay">
-
-                <span class="album-count">📸 18 Bilder</span>
-
-                <h3>Sommerfest</h3>
-
-            </div>
-
-        </div>
+        ))}
 
     </div>
 
 </section>
-
----
-const { images = [], galleryId = "gallery" } = Astro.props;
----
-
-<div class="gallery-grid">
-  {images.map((image) => (
-    <a
-      href={image.src}
-      data-pswp-width={image.width}
-      data-pswp-height={image.height}
-      target="_blank"
-    >
-      <img
-        src={image.src}
-        alt={image.alt}
-        loading="lazy"
-      />
-    </a>
-  ))}
-</div>
-
-<script type="module">
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import 'photoswipe/style.css';
-
-const lightbox = new PhotoSwipeLightbox({
-    gallery: '.gallery-grid',
-    children: 'a',
-    pswpModule: () => import('photoswipe')
-});
-
-lightbox.init();
-</script>

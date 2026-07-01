@@ -1,0 +1,68 @@
+---
+interface Image {
+  src: string;
+  alt: string;
+}
+
+interface Props {
+  title?: string;
+  images?: Image[];
+}
+
+const {
+  title = "Bildergalerie",
+  images = []
+} = Astro.props;
+---
+
+<section class="gallery-section">
+
+  <h2>{title}</h2>
+
+  <div class="gallery-grid">
+    {images.map((image) => (
+      <a href={image.src} target="_blank">
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+        />
+      </a>
+    ))}
+  </div>
+
+</section>
+
+---
+interface Image {
+  src: string;
+  alt: string;
+}
+
+interface Props {
+  title: string;
+  images: Image[];
+}
+
+const { title, images } = Astro.props;
+---
+
+<section class="gallery-section">
+
+<h2>{title}</h2>
+
+<div class="gallery-grid">
+
+    {images.map((image) => (
+
+        <img
+            src={image.src}
+            alt={image.alt}
+            loading="lazy"
+        />
+
+    ))}
+
+</div>
+
+</section>

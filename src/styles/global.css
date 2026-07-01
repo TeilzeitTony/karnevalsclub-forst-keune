@@ -2563,3 +2563,189 @@ backdrop-filter:blur(6px);
     box-shadow:0 20px 45px rgba(0,0,0,.45);
 
 }
+
+/* ==========================
+   GALERIE
+========================== */
+
+.gallery-section{
+
+    max-width:1400px;
+
+    margin:80px auto;
+
+    padding:0 40px;
+
+}
+
+.gallery-section h2{
+
+    color:white;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+    font-size:42px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery-grid a{
+
+    display:block;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* ===========================
+   GALERIE
+=========================== */
+
+.gallery-section{
+
+    max-width:1400px;
+
+    margin:80px auto;
+
+    padding:0 40px;
+
+}
+
+.gallery-section h2{
+
+    color:white;
+
+    font-size:42px;
+
+    text-align:center;
+
+    margin-bottom:40px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.03);
+
+}
+
+/* ===========================
+   GALERIE
+=========================== */
+
+.gallery-section{
+
+    max-width:1400px;
+
+    margin:80px auto;
+
+    padding:0 40px;
+
+}
+
+.gallery-section h2{
+
+    text-align:center;
+
+    color:#fff;
+
+    font-size:42px;
+
+    margin-bottom:40px;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:25px;
+
+}
+
+.gallery-grid img{
+
+    width:100%;
+
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+.gallery-grid img:hover{
+
+    transform:scale(1.04);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.5);
+
+}
