@@ -2429,3 +2429,19 @@ backdrop-filter:blur(6px);
     }
 
 }
+
+.page-banner{
+
+    width:100%;
+
+    max-width:1000px;
+
+    display:block;
+
+    margin:0 auto 50px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
