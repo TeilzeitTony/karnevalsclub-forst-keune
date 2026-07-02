@@ -1055,6 +1055,34 @@ nav a:hover{
 
 }
 
+.footer-social{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    margin-top:15px;
+
+    color:#d4af37;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.footer-social:hover{
+
+    color:#ffffff;
+
+    transform:translateY(-2px);
+
+}
+
 .copyright{
 
     margin-top:60px;
