@@ -630,6 +630,16 @@ nav a:hover{
 
 }
 
+.groups-title {
+    font-size: 3rem; /* Desktop */
+}
+
+@media (max-width: 768px) {
+    .groups-title {
+        font-size: 2rem;
+    }
+}
+
 .groups-text{
 
     text-align:center;
@@ -3558,8 +3568,6 @@ span{
 
 }
 
-@media (max-width:768px){
-
 .hero-header{
 
     flex-direction:column;
@@ -3618,7 +3626,6 @@ span{
 
 }
 
-}
 .hero-title{
 
     font-size:3rem;
