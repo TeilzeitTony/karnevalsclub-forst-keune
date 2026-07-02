@@ -1,6 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PageHero from "../components/PageHero.astro";
+---
+
+<Layout title="Vereinsarchiv">
+
+<PageHero
+    title="Vereinsarchiv"
+    subtitle="Erinnerungen an unsere schönsten Momente"
+    image="/galerie-header.jpg"
+/>
+
 <section class="container">
 
     <h2>Unsere Alben</h2>
+
 
     <p class="groups-text">
         Hier findet ihr die schönsten Erinnerungen aus unserem Vereinsleben.
@@ -10,7 +24,9 @@
 
         <a href="/alice-im-wunderland" class="album-card">
 
-            <img src="/galerie/alice/alice2.jpg" alt="Alice im Wunderland" />
+             <img src="/galerie/alice/alice2.jpg" alt="Alice im Wunderland" />
+              alt="Alice im Wunderland"
+/>
 
             <div class="album-overlay">
 
@@ -26,7 +42,7 @@
 
         <a href="#" class="album-card">
 
-            <img src="/events/summer-night-2026.jpg" alt="Summer Night" />
+            <img src="/events/summer-night-2026.jpg" alt="Summer Night">
 
             <div class="album-overlay">
 
@@ -43,4 +59,5 @@
     </div>
 
 </section>
+
 </Layout>
