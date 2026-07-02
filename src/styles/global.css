@@ -267,22 +267,76 @@ nav a:hover{
    Hero
 =========================== */
 
+@media (max-width:768px){
+
 .hero{
 
-    height:calc(100vh - 150px);
+    height:auto;
+    min-height:100vh;
 
-    background:
-        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.75)),
-        url("/hero.jpg");
+    padding:60px 20px;
 
-    background-size:cover;
-    background-position:center;
+}
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.hero-content{
 
-    text-align:center;
+    width:100%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    padding:0 20px;
+
+}
+}
+
+.hero-logo{
+
+    width:170px;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-size:2rem;
+
+    line-height:1.2;
+
+    word-break:break-word;
+
+}
+
+.hero p{
+
+    margin-top:15px;
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    color:#dddddd;
+
+    word-break:break-word;
+
+}
+
+.hero-text{
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+
+}
+
+.subtitle{
+
+    font-size:18px;
+
 }
 
 .hero-overlay{
@@ -315,11 +369,6 @@ nav a:hover{
     gap:30px;
 
 }
-.hero-content{
-
-    animation:fadeUp 1.2s ease;
-
-}
 
 .subtitle{
 
@@ -336,30 +385,6 @@ nav a:hover{
     text-transform:uppercase;
 
     margin-bottom:20px;
-
-}
-
-.hero h1{
-
-    font-size:82px;
-
-    font-weight:800;
-
-    line-height:1.1;
-
-    margin-top:20px;
-
-    text-shadow:0 10px 30px rgba(0,0,0,.45);
-
-}
-
-.hero p{
-
-    margin-top:30px;
-
-    font-size:28px;
-
-    color:#e5e5e5;
 
 }
 
@@ -3318,4 +3343,16 @@ span{
 
     width:100%;
     overflow-wrap:break-word;
+}
+
+.mobile-break{
+    display:none;
+}
+
+@media (max-width:768px){
+
+    .mobile-break{
+        display:block;
+    }
+
 }
