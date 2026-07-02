@@ -3239,3 +3239,73 @@ backdrop-filter:blur(6px);
 }
 
 }
+
+/* ===========================================
+   SMARTPHONE - TEXTE & BILDER
+=========================================== */
+
+*{
+    box-sizing:border-box;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span{
+
+    overflow-wrap:break-word;
+    word-wrap:break-word;
+    word-break:break-word;
+}
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+@media (max-width:768px){
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    .container{
+
+        width:95%;
+
+    }
+
+    h1{
+
+        font-size:2rem;
+
+    }
+
+    h2{
+
+        font-size:1.7rem;
+
+    }
+
+    p{
+
+        font-size:1rem;
+
+        line-height:1.7;
+
+    }
+
+}
