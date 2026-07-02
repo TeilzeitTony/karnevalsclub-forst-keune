@@ -204,6 +204,32 @@ nav a:hover{
 
 }
 
+.hero-header{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:35px;
+
+    margin-top:60px;
+    margin-bottom:35px;
+
+}
+
+.hero-logo{
+
+    width:220px;
+    height:auto;
+
+}
+
+.hero-heading{
+
+    text-align:left;
+
+}
+
 @media (max-width:768px){
 
 .hero{
@@ -3360,6 +3386,30 @@ span{
     width:100%;
     max-width:100%;
     padding:0 25px;
+
+}
+
+.hero-header{
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:20px;
+
+}
+
+.hero-heading{
+
+    text-align:center;
+
+}
+
+.hero-logo{
+
+    width:170px;
 
 }
 
