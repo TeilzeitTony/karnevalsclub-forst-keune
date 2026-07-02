@@ -4026,3 +4026,9 @@ span{
     box-shadow:0 12px 35px rgba(212,175,55,.25);
 
 }
+
+@media (max-width: 768px) {
+    .group-info p {
+        font-size: 0.8rem;
+    }
+}
