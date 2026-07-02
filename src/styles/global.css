@@ -3491,6 +3491,12 @@ span{
 
 @media (max-width:768px){
 
+.mobile-break{
+
+    display:none;
+
+}
+
 @media (max-width:768px){
 
 .hero-title{
@@ -3500,6 +3506,12 @@ span{
     line-height:1.25;
 
     white-space:normal;
+
+}
+
+.mobile-break{
+
+    display:block;
 
 }
 
