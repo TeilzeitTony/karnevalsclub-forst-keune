@@ -43,7 +43,7 @@ body{
     justify-content:space-between;
     align-items:center;
 
-    padding:14px 30px;
+    padding:18px 40px;
 
     background:#111;
 
@@ -65,8 +65,8 @@ body{
 
 .navbar-logo{
 
-    width:65px;
-    height:65px;
+    width:80px;
+    height:80px;
     object-fit:contain;
 
 }
@@ -74,9 +74,10 @@ body{
 .logo-text h2{
 
     margin:0;
-    color:#fff;
 
-    font-size:20px;
+    font-size:28px;
+
+    color:#fff;
 
     line-height:1.1;
 
@@ -86,11 +87,11 @@ body{
 
 .logo-text span{
 
+    font-size:18px;
+
     color:#d4af37;
 
-    font-size:13px;
-
-    font-weight:500;
+    font-weight:600;
 
 }
 
