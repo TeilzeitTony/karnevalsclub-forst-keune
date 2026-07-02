@@ -3446,10 +3446,11 @@ span{
 
     .hero-title{
 
-        font-size:2.4rem;
-        line-height:1.2;
+    font-size:2rem;
 
-    }
+    line-height:1.2;
+
+}
 
     .hero-title span{
 
@@ -3482,6 +3483,22 @@ span{
         line-height:1.7;
 
     }
+
+}
+
+@media (max-width:768px){
+
+.hero-title{
+    font-size:1.9rem;
+}
+
+h2{
+    font-size:1.7rem;
+}
+
+.team-card h3{
+    font-size:1.3rem;
+}
 
 }
 
