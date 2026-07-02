@@ -2824,3 +2824,41 @@ backdrop-filter:blur(6px);
     }
 
 }
+
+.secret-badge{
+
+    display:inline-block;
+
+    padding:10px 22px;
+
+    margin:15px 0;
+
+    background:linear-gradient(135deg,#d4af37,#f3d56b);
+
+    color:#111;
+
+    font-weight:700;
+
+    border-radius:999px;
+
+    font-size:15px;
+
+    letter-spacing:1px;
+
+    animation:secretPulse 2.5s ease-in-out infinite;
+
+}
+
+@keyframes secretPulse{
+
+    0%,100%{
+        transform:scale(1);
+        box-shadow:0 0 0 rgba(212,175,55,0);
+    }
+
+    50%{
+        transform:scale(1.05);
+        box-shadow:0 0 18px rgba(212,175,55,.6);
+    }
+
+}
