@@ -1,12 +1,12 @@
 <script type="module">
-  import PhotoSwipeLightbox from "photoswipe/lightbox";
-  import "photoswipe/style.css";
+import PhotoSwipeLightbox from "photoswipe/lightbox";
+import "photoswipe/style.css";
 
-  const lightbox = new PhotoSwipeLightbox({
-    gallery: ".gallery-grid",
-    children: "a",
+const lightbox = new PhotoSwipeLightbox({
+    gallery: "body",
+    children: "a.lightbox",
     pswpModule: () => import("photoswipe")
-  });
+});
 
-  lightbox.init();
+lightbox.init();
 </script>
