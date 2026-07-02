@@ -2749,3 +2749,37 @@ backdrop-filter:blur(6px);
     box-shadow:0 20px 40px rgba(0,0,0,.5);
 
 }
+
+/* ==========================
+   FLYER
+========================== */
+
+.flyer-card{
+
+    max-width:500px;
+
+    margin:50px auto;
+
+    text-align:center;
+
+}
+
+.flyer-card img{
+
+    width:100%;
+
+    height:auto;
+
+    border-radius:18px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+}
+
+.flyer-card img:hover{
+
+    transform:scale(1.03);
+
+}
