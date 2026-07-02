@@ -33,27 +33,68 @@ body{
    Header
 =========================== */
 
+/* ===========================================
+   NAVBAR
+=========================================== */
+
 .navbar{
 
-    height:200px;
-
-    background:#000;
-
-    border-bottom:4px solid #D4AF37;
-
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
-    padding:0 80px;
+    padding:14px 30px;
+
+    background:#111;
 
     position:sticky;
-
     top:0;
+    z-index:1000;
 
-    z-index:999;
+}
+
+.logo-area{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    text-decoration:none;
+
+}
+
+.navbar-logo{
+
+    width:65px;
+    height:65px;
+    object-fit:contain;
+
+}
+
+.logo-text h2{
+
+    margin:0;
+    color:#fff;
+
+    font-size:26px;
+
+    line-height:1;
+
+}
+
+.logo-text span{
+
+    color:#d4af37;
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+.menu-toggle{
+
+    display:none;
 
 }
 
@@ -171,9 +212,10 @@ nav a:hover{
 }
 
 .hero-content{
-
     width:100%;
-
+    max-width:900px;
+    margin:0 auto;
+    padding:0 20px;
 }
 
 .hero-logo{
@@ -279,15 +321,9 @@ nav a:hover{
 }
 
 .hero-content{
-
     width:100%;
-
-    max-width:900px;
-
-    margin:auto;
-
+    max-width:100%;
     padding:0 20px;
-
 }
 }
 
@@ -3266,6 +3302,7 @@ backdrop-filter:blur(6px);
 }
 
 /* ===========================================
+/* ===========================================
    SMARTPHONE - TEXTE & BILDER
 =========================================== */
 
@@ -3273,13 +3310,29 @@ backdrop-filter:blur(6px);
     box-sizing:border-box;
 }
 
+html,
+body{
+
+    overflow-x:hidden;
+
+}
+
 img{
+
     max-width:100%;
     height:auto;
+    display:block;
+
+}
+
+.container{
+
+    width:min(1200px,92%);
+    margin:auto;
+
 }
 
 p,
-h1,
 h2,
 h3,
 h4,
@@ -3289,15 +3342,68 @@ a,
 span{
 
     overflow-wrap:break-word;
-    word-wrap:break-word;
-    word-break:break-word;
 }
 
-.container{
+.team-info,
+.dance-content,
+.hero-content,
+.program-content,
+.media-card{
 
-    width:min(1200px,92%);
-    margin:auto;
+    width:100%;
+
 }
+
+.hero-content{
+
+    width:100%;
+    max-width:900px;
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+}
+
+.hero-title{
+
+    font-size:4rem;
+
+    line-height:1.1;
+
+    text-align:center;
+
+    margin:20px 0;
+
+}
+
+.hero-title span{
+
+    display:inline;
+
+}
+
+.hero-subtitle{
+
+    font-size:28px;
+
+    margin:20px 0;
+
+}
+
+.hero-text{
+
+    max-width:700px;
+
+    margin:25px auto;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================
+   SMARTPHONE
+=========================================== */
 
 @media (max-width:768px){
 
@@ -3313,46 +3419,143 @@ span{
 
     }
 
-    h1{
+    .hero{
 
-        font-size:2rem;
+        height:auto;
+        min-height:100vh;
+
+        padding:70px 20px;
+
+    }
+
+    .hero-content{
+
+        max-width:100%;
+        padding:0 10px;
+
+    }
+
+    .hero-logo{
+
+        width:170px;
+        margin:0 auto 25px;
+
+    }
+
+    .hero-title{
+
+        font-size:2.4rem;
+        line-height:1.2;
+
+    }
+
+    .hero-title span{
+
+        display:block;
+
+    }
+
+    .hero-subtitle{
+
+        font-size:20px;
+
+    }
+
+    .hero-text{
+
+        font-size:17px;
+        line-height:1.8;
 
     }
 
     h2{
 
-        font-size:1.7rem;
+        font-size:1.8rem;
 
     }
 
     p{
 
         font-size:1rem;
-
         line-height:1.7;
 
     }
 
 }
 
-.team-info,
-.dance-content,
-.hero-content,
-.program-content,
-.media-card{
-
-    width:100%;
-    overflow-wrap:break-word;
-}
-
-.mobile-break{
-    display:none;
-}
-
 @media (max-width:768px){
 
-    .mobile-break{
-        display:block;
-    }
+.navbar{
+
+    padding:12px 16px;
+
+}
+
+.navbar-logo{
+
+    width:50px;
+    height:50px;
+
+}
+
+.logo-text h2{
+
+    font-size:18px;
+
+}
+
+.logo-text span{
+
+    font-size:14px;
+
+}
+
+.menu-toggle{
+
+    display:block;
+
+    font-size:32px;
+
+    color:white;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+}
+
+#nav{
+
+    display:none;
+
+    position:absolute;
+
+    top:74px;
+
+    left:0;
+
+    width:100%;
+
+    background:#111;
+
+    flex-direction:column;
+
+}
+
+#nav.open{
+
+    display:flex;
+
+}
+
+#nav a{
+
+    padding:18px;
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+}
 
 }
