@@ -2315,9 +2315,7 @@ backdrop-filter:blur(6px);
 
     width:100%;
 
-    aspect-ratio:4/3;
-
-    object-fit:cover;
+    height:auto;
 
     display:block;
 
@@ -2325,7 +2323,7 @@ backdrop-filter:blur(6px);
 
     box-shadow:0 15px 35px rgba(0,0,0,.35);
 
-    transition:transform .35s ease, box-shadow .35s ease;
+    transition:.35s;
 
 }
 
@@ -4076,15 +4074,29 @@ span{
    ALICE GALERIE SMARTPHONE
 ========================== */
 
+/* ==========================
+   ALICE GALERIE SMARTPHONE
+========================== */
+
 .alice-gallery{
 
     grid-template-columns:1fr;
 
-    gap:18px;
+    gap:20px;
+
+    margin-top:30px;
 
 }
 
 .alice-gallery img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    object-fit:contain;
 
     border-radius:16px;
 

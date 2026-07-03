@@ -1,6 +1,4 @@
 ---
-import HeroSlideshow from "./HeroSlideshow.astro";
-
 interface Props {
   title: string;
   subtitle: string;
@@ -19,22 +17,21 @@ const {
 ---
 
 <section
-    class="page-hero"
-    style={`background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('${image}')`}
+  class="page-hero"
+  style={`background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('${image}')`}
 >
 
     <div class="page-hero-content">
 
         <div class="hero-title-row">
 
-<div class="hero-side-wrapper">
-
-    <HeroSlideshow
-    leftImage={leftImage}
-    rightImage={rightImage}
-/>
-
-</div>
+            {leftImage && (
+                <img
+                    src={leftImage}
+                    alt=""
+                    class="hero-side-image"
+                />
+            )}
 
             <div class="hero-center">
 
@@ -44,16 +41,13 @@ const {
 
             </div>
 
-<div class="hero-side-wrapper">
-
-    {rightImage && (
-        <img
-            src={rightImage}
-            alt=""
-            class="hero-side-image hero-right"
-            id="heroRight"
-        />
-    )}
+            {rightImage && (
+                <img
+                    src={rightImage}
+                    alt=""
+                    class="hero-side-image"
+                />
+            )}
 
         </div>
 
