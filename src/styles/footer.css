@@ -1,0 +1,113 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    margin-top:100px;
+
+    background:#000;
+
+    border-top:4px solid #d4af37;
+
+}
+
+.footer-content{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    padding:70px 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:50px;
+
+}
+
+.footer-column{
+
+    transition:.3s;
+
+}
+
+.footer-column h3{
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-column:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.footer-column p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#ffffff;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#d4af37;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.footer-social img{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.footer-bottom{
+
+    border-top:2px solid #d4af37;
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:.95rem;
+
+}

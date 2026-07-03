@@ -1,74 +1,168 @@
+/* ==========================================
+   NAVBAR
+========================================== */
+
 .navbar{
 
-    height:200px;
-    background:#000;
-    border-bottom:4px solid #D4AF37;
-
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    padding:0 80px;
-
     position:sticky;
+
     top:0;
-    z-index:999;
 
-}
-
-.logo{
+    z-index:1000;
 
     display:flex;
+
+    justify-content:space-between;
+
     align-items:center;
-    gap:25px;
+
+    padding:18px 40px;
+
+    background:#000;
+
+    border-bottom:2px solid #d4af37;
 
 }
 
-.logo img{
+/* ==========================================
+   LOGO
+========================================== */
 
-    height:180px;
-    width:auto;
-
-}
-
-.logo h2{
-
-    color:white;
-    font-size:40px;
-    font-weight:800;
-
-}
-
-nav{
+.logo-area{
 
     display:flex;
+
     align-items:center;
-    gap:90px;
 
-}
+    gap:12px;
 
-nav a{
-
-    color:white;
     text-decoration:none;
 
-    font-size:24px;
+}
+
+.navbar-logo{
+
+    width:75px;
+
+    height:75px;
+
+    object-fit:contain;
+
+}
+
+.logo-text h2{
+
+    margin:0;
+
+    font-size:28px;
+
+    color:#fff;
+
     font-weight:700;
 
-    transition:.3s ease;
+    line-height:1.1;
 
 }
 
-nav a:hover{
+.logo-text span{
 
-    color:#D4AF37;
+    color:#d4af37;
 
-    transform:scale(1.08);
+    font-size:16px;
+
+    font-weight:600;
 
 }
 
-nav a.active{
+/* ==========================================
+   NAVIGATION
+========================================== */
 
-    color:#D4AF37;
+#nav{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:flex-end;
+
+    gap:55px;
+
+    margin-left:auto;
+
+}
+#nav a{
+
+    color:#fff;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    letter-spacing:.3px;
+
+    transition:.3s;
+
+    position:relative;
+
+}
+
+#nav a:hover{
+
+    color:#d4af37;
+
+}
+
+#nav a.active{
+
+    color:#d4af37;
+
+}
+
+#nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:#d4af37;
+
+    transition:.3s;
+
+}
+
+#nav a:hover::after,
+
+#nav a.active::after{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   HAMBURGER
+========================================== */
+
+.menu-toggle{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:34px;
+
+    cursor:pointer;
 
 }

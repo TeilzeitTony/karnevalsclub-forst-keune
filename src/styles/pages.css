@@ -1,0 +1,824 @@
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+    padding:100px 0;
+
+}
+
+/* ==========================================
+   GRUPPEN
+========================================== */
+
+.groups{
+
+    padding:100px 0;
+
+}
+
+.groups-title{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+.groups-text{
+
+    text-align:center;
+
+    color:#ccc;
+
+    max-width:750px;
+
+    margin:0 auto 60px;
+
+    line-height:1.8;
+
+}
+
+.group-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.group-card{
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:#050505;
+
+    border:1px solid rgba(212,175,55,.12);
+
+    box-shadow:0 20px 55px rgba(212,175,55,.18);
+
+    transition:.35s;
+
+}
+
+.group-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 45px rgba(212,175,55,.22);
+
+}
+
+.group-card img{
+
+    width:100%;
+
+    height:330px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.group-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.group-info{
+
+    padding:28px;
+
+    text-align:center;
+
+}
+
+.group-info h3{
+
+    color:#d4af37;
+
+    font-size:1.8rem;
+
+    margin-bottom:10px;
+
+}
+
+.group-info p{
+
+    color:#ddd;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================
+   SCHLACHTRUF BANNER
+========================================== */
+
+.schlachtruf-banner{
+
+    max-width:320px;
+
+    margin:50px auto;
+
+}
+
+.schlachtruf-banner img{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.schlachtruf-banner:hover img{
+
+    transform:scale(1.03);
+
+}
+
+@keyframes bannerReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   TANZGRUPPEN
+========================================== */
+
+.team-card img{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+    margin:30px auto 20px;
+
+}
+
+/* ==========================================
+   KONTAKT
+========================================== */
+
+.contact-social img,
+.contact-icons img,
+.social-icons img{
+
+    width:42px;
+
+    height:42px;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   KONTAKT
+========================================== */
+
+.contact-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:35px;
+
+}
+
+.contact-card{
+
+    background:#1b1b1b;
+
+    border-radius:24px;
+
+    padding:35px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+}
+
+.social-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.social-icon{
+
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    flex-shrink:0;
+
+    transition:.3s;
+
+}
+
+.social-link:hover .social-icon{
+
+    transform:scale(1.08);
+
+}
+
+.email-link{
+
+    color:#d4af37;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   EVENT FLYER
+========================================== */
+
+.event-highlight{
+
+    display:flex;
+    align-items:flex-start;
+    gap:40px;
+    margin-top:50px;
+
+}
+
+#eventFlyer{
+
+    width:280px;
+
+    max-width:100%;
+
+    border-radius:18px;
+
+    cursor:pointer;
+
+    display:block;
+
+    transition:.3s;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+}
+
+#eventFlyer:hover{
+
+    transform:scale(1.03);
+
+}
+
+.flyer-modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.92);
+
+    z-index:9999;
+
+}
+
+#flyerImage{
+
+    width:auto;
+
+    max-width:700px;
+
+    max-height:90vh;
+
+    border-radius:18px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+
+}
+
+.close-flyer{
+
+    position:absolute;
+    top:25px;
+    right:35px;
+    color:white;
+    font-size:48px;
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   WERBEFLYER
+========================================== */
+
+.flyer-card{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:45px auto;
+
+}
+
+.flyer-card img{
+
+    width:320px;
+
+    max-width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.flyer-card img:hover{
+
+    transform:translateY(-6px) scale(1.03);
+
+    box-shadow:0 22px 55px rgba(212,175,55,.20);
+
+}
+
+/* ==========================================
+   STARTSEITE EVENT
+========================================== */
+
+.event-poster-home{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin:50px auto;
+
+}
+
+.event-poster-home a{
+
+    display:block;
+
+}
+
+.event-poster-home img{
+
+    width:320px;
+
+    max-width:100%;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.45);
+
+    transition:.35s;
+
+}
+
+.event-poster-home img:hover{
+
+    transform:translateY(-6px) scale(1.02);
+
+    box-shadow:0 20px 50px rgba(212,175,55,.22);
+
+}
+
+.event-button{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+/* ==========================================
+   ÜBERSCHRIFTEN
+========================================== */
+
+/* ==========================================
+   TANZGRUPPEN
+========================================== */
+
+.teams{
+
+    width:min(1200px,92%);
+    margin:80px auto;
+    display:grid;
+    gap:35px;
+
+}
+
+/* ==========================================
+   TANZGRUPPEN (Netflix Style)
+========================================== */
+
+/* ==========================================
+   NETFLIX STYLE TEAM CARDS
+========================================== */
+
+.teams{
+
+    width:min(1350px,92%);
+    margin:90px auto;
+    display:grid;
+    gap:35px;
+
+}
+
+.team-card{
+
+    display:grid;
+    grid-template-columns:320px 1fr;
+
+    align-items:center;
+
+    gap:50px;
+
+    padding:0;
+
+    overflow:hidden;
+
+    border-radius:26px;
+
+    background:#181818;
+
+    border-left:6px solid #d4af37;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+
+    transition:.35s;
+
+}
+
+.team-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 22px 60px rgba(212,175,55,.28);
+
+}
+
+.team-card img{
+
+    width:100%;
+    height:320px;
+
+    object-fit:contain;
+
+    padding:30px;
+
+    background:linear-gradient(
+        135deg,
+        #111,
+        #1d1d1d,
+        #111
+    );
+
+    transition:.4s;
+
+}
+
+.team-card:hover img{
+
+    transform:scale(1.04);
+
+}
+
+.team-info{
+
+    padding:35px 40px;
+
+}
+
+.team-info h2{
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+}
+
+.team-info p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.team-arrow{
+
+    display:inline-block;
+
+    font-size:2rem;
+
+    color:#d4af37;
+
+    transition:.3s;
+
+}
+
+.team-card:hover .team-arrow{
+
+    transform:translateX(10px);
+
+}
+
+.team-info h2{
+
+    color:#d4af37;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+}
+
+.team-info p{
+
+    color:#ddd;
+
+    font-size:1.08rem;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================
+   TERMINE
+========================================== */
+
+.event-highlight{
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:45px;
+
+    align-items:center;
+
+    margin-top:50px;
+
+}
+
+#eventFlyer{
+
+    width:100%;
+
+    max-width:320px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+#eventFlyer:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 20px 45px rgba(212,175,55,.25);
+
+}
+
+.event-card{
+
+    background:#1b1b1b;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.35);
+
+}
+
+.event-badge{
+
+    display:inline-block;
+
+    padding:7px 16px;
+
+    border-radius:999px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+.event-card h3{
+
+    color:#fff;
+
+    font-size:2rem;
+
+    margin-bottom:18px;
+
+}
+
+.event-card p{
+
+    color:#ddd;
+
+    line-height:1.8;
+
+}
+
+.event-list{
+
+    list-style:none;
+
+    margin:25px 0;
+
+    padding:0;
+
+}
+
+.event-list li{
+
+    margin-bottom:12px;
+
+    font-size:1.05rem;
+
+}
+
+.event-note{
+
+    color:#d4af37;
+
+    font-weight:600;
+
+    margin-top:20px;
+
+}
+
+/* ==========================================
+   WEITERE TERMINE
+========================================== */
+
+.future-event{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:30px;
+
+    margin-top:45px;
+
+}
+
+.event-date{
+
+    width:110px;
+
+    min-width:110px;
+
+    height:110px;
+
+    border-radius:20px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.event-date .day{
+
+    font-size:2rem;
+
+    line-height:1;
+
+}
+
+.event-date .month{
+
+    font-size:1rem;
+
+}
+
+.event-content h3{
+
+    color:#d4af37;
+
+    margin-bottom:10px;
+
+}
+
+/* ==========================================
+   FLYER MODAL
+========================================== */
+
+.flyer-modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.92);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+#flyerImage{
+
+    max-width:90vw;
+
+    max-height:90vh;
+
+    border-radius:20px;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.6);
+
+}
+
+.close-flyer{
+
+    position:absolute;
+
+    top:25px;
+
+    right:35px;
+
+    font-size:52px;
+
+    color:white;
+
+    cursor:pointer;
+
+}

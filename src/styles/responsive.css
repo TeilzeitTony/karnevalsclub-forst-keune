@@ -1,0 +1,182 @@
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer{
+
+    margin-top:100px;
+
+    background:#000;
+
+    border-top:4px solid #d4af37;
+
+}
+
+.footer-content{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    padding:70px 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:50px;
+
+}
+
+.footer-column h3{
+
+    color:#d4af37;
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.footer-column p{
+
+    color:#d8d8d8;
+
+    line-height:1.8;
+
+    margin-bottom:12px;
+
+}
+
+.footer-column a{
+
+    display:block;
+
+    color:#ffffff;
+
+    margin-bottom:12px;
+
+    transition:.3s;
+
+}
+
+.footer-column a:hover{
+
+    color:#d4af37;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.footer-social img{
+
+    width:38px;
+
+    height:38px;
+
+}
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    padding:25px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:.95rem;
+
+}Smartphone
+
+.team-card{
+
+    grid-template-columns:1fr;
+
+}
+
+.team-card img{
+
+    width:100%;
+
+    height:240px;
+
+}
+
+.team-info{
+
+    text-align:center;
+
+}
+
+.team-arrow{
+
+    display:block;
+
+    margin-top:15px;
+
+}
+.team-info h2{
+
+    font-size:1.8rem;
+
+}
+
+.event-highlight{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+#eventFlyer{
+
+    margin:auto;
+
+}
+
+.future-event{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.social-link{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+.event-poster-home img{
+
+    width:260px;
+
+}
+
+.flyer-card img{
+
+    width:260px;
+
+}

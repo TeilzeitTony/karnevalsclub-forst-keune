@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import PageHero from "../components/PageHero.astro";
+import GalleryGrid from "../components/GalleryGrid.astro";
 ---
 
 <Layout title="Alice im Wunderland">
@@ -8,11 +9,8 @@ import PageHero from "../components/PageHero.astro";
 <PageHero
     title="Alice im Wunderland"
     subtitle="Showprogramm 2026 / 2027"
-    image="/alice-header.jpg"
-    leftImage="/galerie/alice/alice1.jpg"
-    rightImage="/galerie/alice/alice2.jpg"
+    image="/galerie/alice/alice1.jpg"
 />
-
 <section class="container">
 
     <h2>Über das Programm</h2>
@@ -29,39 +27,23 @@ import PageHero from "../components/PageHero.astro";
 
 <section class="container">
 
-<h2>Impressionen aus „Alice im Wunderland“</h2>
+    <h2>Impressionen aus „Alice im Wunderland“</h2>
 
-<p class="groups-text">
-    Einige Eindrücke aus unserem aktuellen Showprogramm.
-</p>
+    <p class="groups-text">
+        Einige Eindrücke aus unserem aktuellen Showprogramm.
+    </p>
 
-<div class="gallery-grid">
-
-    <a href="/galerie/alice/alice1.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice1.jpg" alt="Alice Bild 1">
-    </a>
-
-    <a href="/galerie/alice/alice2.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice2.jpg" alt="Alice Bild 2">
-    </a>
-
-    <a href="/galerie/alice/alice3.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice3.jpg" alt="Alice Bild 3">
-    </a>
-
-    <a href="/galerie/alice/alice4.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice4.jpg" alt="Alice Bild 4">
-    </a>
-
-    <a href="/galerie/alice/alice5.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice5.jpg" alt="Alice Bild 5">
-    </a>
-
-    <a href="/galerie/alice/alice6.jpg" class="lightbox" data-pswp-width="1600" data-pswp-height="1067">
-        <img src="/galerie/alice/alice6.jpg" alt="Alice Bild 6">
-    </a>
-
-</div>
+    <GalleryGrid
+        folder="/galerie/alice"
+        images={[
+            "alice1.jpg",
+            "alice2.jpg",
+            "alice3.jpg",
+            "alice4.jpg",
+            "alice5.jpg",
+            "alice6.jpg"
+        ]}
+    />
 
 </section>
 

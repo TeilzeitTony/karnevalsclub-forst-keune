@@ -1,0 +1,57 @@
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:#000;
+
+    color:#fff;
+
+    font-family:"Poppins",sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+img{
+
+    display:block;
+    max-width:100%;
+    height:auto;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+ul{
+
+    list-style:none;
+
+}
+
+.container{
+
+    width:min(1200px,92%);
+
+    margin:auto;
+
+}

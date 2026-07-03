@@ -2,11 +2,23 @@
 import PhotoSwipeLightbox from "photoswipe/lightbox";
 import "photoswipe/style.css";
 
-const lightbox = new PhotoSwipeLightbox({
-    gallery: "body",
-    children: "a.lightbox",
-    pswpModule: () => import("photoswipe")
-});
+document.querySelectorAll(".gallery-grid").forEach((gallery) => {
 
-lightbox.init();
+    const lightbox = new PhotoSwipeLightbox({
+
+        gallery,
+
+        children: "a",
+
+        pswpModule: () => import("photoswipe"),
+
+        showHideAnimationType: "zoom",
+
+        bgOpacity: 0.9
+
+    });
+
+    lightbox.init();
+
+});
 </script>

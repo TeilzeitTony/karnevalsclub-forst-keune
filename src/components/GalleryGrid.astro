@@ -1,0 +1,31 @@
+---
+interface Props {
+    folder: string;
+    images: string[];
+}
+
+const { folder, images } = Astro.props;
+---
+
+<div class="gallery-grid">
+
+    {images.map((image, index) => (
+
+        <a
+            href={`${folder}/${image}`}
+            class="lightbox"
+            data-pswp-width="1600"
+            data-pswp-height="1067"
+        >
+
+            <img
+                src={`${folder}/${image}`}
+                alt={`Bild ${index + 1}`}
+                loading="lazy"
+            />
+
+        </a>
+
+    ))}
+
+</div>
