@@ -1,0 +1,72 @@
+---
+interface Props {
+    leftImages: string[];
+    rightImages: string[];
+}
+
+const {
+    leftImages = [],
+    rightImages = []
+} = Astro.props;
+---
+
+<div class="hero-slideshow">
+
+    <img
+        id="heroLeft"
+        class="hero-side-image hero-left"
+        src={leftImages[0]}
+        alt=""
+    />
+
+    <img
+        id="heroRight"
+        class="hero-side-image hero-right"
+        src={rightImages[0]}
+        alt=""
+    />
+
+</div>
+
+<script define:vars={{ leftImages, rightImages }}>
+
+let left = 0;
+let right = 0;
+
+const leftImg = document.getElementById("heroLeft");
+const rightImg = document.getElementById("heroRight");
+
+setInterval(() => {
+
+    left = (left + 1) % leftImages.length;
+    right = (right + 1) % rightImages.length;
+
+    if(leftImg){
+
+        leftImg.style.opacity = "0";
+
+        setTimeout(() => {
+
+            leftImg.src = leftImages[left];
+            leftImg.style.opacity = "1";
+
+        },400);
+
+    }
+
+    if(rightImg){
+
+        rightImg.style.opacity = "0";
+
+        setTimeout(() => {
+
+            rightImg.src = rightImages[right];
+            rightImg.style.opacity = "1";
+
+        },400);
+
+    }
+
+},5000);
+
+</script>

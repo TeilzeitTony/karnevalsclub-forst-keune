@@ -3132,6 +3132,105 @@ backdrop-filter:blur(6px);
     box-shadow:0 20px 40px rgba(0,0,0,.5);
 
 }
+/* ==========================================
+   PAGE HERO
+========================================== */
+
+.page-hero{
+
+    min-height:460px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:60px 20px;
+
+}
+
+.page-hero-content{
+
+    width:100%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.hero-title-row{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:60px;
+
+}
+
+.hero-center{
+
+    flex:1;
+
+    max-width:700px;
+
+    text-align:center;
+
+}
+
+.hero-center h1{
+
+    font-size:3.5rem;
+
+    margin-bottom:15px;
+
+}
+
+.hero-center p{
+
+    font-size:1.3rem;
+
+    color:#ddd;
+
+}
+
+.hero-side-image{
+
+    width:230px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.40);
+
+    transition:.4s;
+
+}
+
+.hero-side-image:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* Danach kommt irgendwann erst */
+
+@media (max-width:768px){
+
+}
 
 /* ==========================
    FLYER
@@ -3795,112 +3894,85 @@ span{
 @media (max-width:768px){
 
     body{
-
         overflow-x:hidden;
-
     }
 
     .container{
-
         width:95%;
-
     }
 
     .hero{
-
         height:auto;
         min-height:100vh;
-
         padding:70px 20px;
-
     }
 
     .hero-content{
-
         max-width:100%;
         padding:0 10px;
-
     }
 
     .hero-logo{
-
         width:170px;
         margin:0 auto 25px;
-
     }
 
     .page-hero-content h1{
+        font-size:2.2rem;
+        line-height:1.2;
+    }
 
-    font-size:2.2rem;
+    .hero-title{
+        font-size:1.5rem;
+        line-height:1.25;
+        white-space:normal;
+    }
 
-    line-height:1.2;
-
-}
-
-@media (max-width:768px){
-
-.mobile-break{
-
-    display:none;
-
-}
-
-@media (max-width:768px){
-
-.hero-title{
-
-    font-size:1.5rem;   /* statt 1.8rem */
-
-    line-height:1.25;
-
-    white-space:normal;
-
-}
-
-.mobile-break{
-
-    display:block;
-
-}
-
-}
-
-}
+    .mobile-break{
+        
+    }
 
     .hero-title span{
-
         display:block;
-
     }
 
     .hero-subtitle{
-
         font-size:20px;
-
     }
 
     .hero-text{
-
         font-size:17px;
         line-height:1.8;
-
     }
 
     h2{
-
         font-size:1.8rem;
-
     }
 
     p{
-
         font-size:1rem;
         line-height:1.7;
-
     }
 
-}
+    .hero-title-row{
+        flex-direction:column;
+        gap:25px;
+    }
 
+    .hero-side-image{
+        width:170px;
+        height:230px;
+    }
+
+    .hero-center h1{
+        font-size:2rem;
+    }
+
+    .hero-center p{
+        font-size:1rem;
+    }
+
+} /* <-- HIER endet das @media */
 
 
 @media (max-width:768px){
