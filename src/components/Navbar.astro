@@ -71,5 +71,11 @@ document.querySelectorAll("#nav a").forEach(link => {
 
 });
 
-</script>
+window.addEventListener("scroll", () => {
+
+    nav?.classList.remove("open");
+    overlay?.classList.remove("show");
+
+});
+
 </script>
