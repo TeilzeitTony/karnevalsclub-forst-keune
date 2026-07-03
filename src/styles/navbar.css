@@ -166,3 +166,155 @@
     cursor:pointer;
 
 }
+
+
+
+
+/* ==========================================
+   SMARTPHONE NAVIGATION
+========================================== */
+
+.menu-toggle{
+
+    display:block;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:2.2rem;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    z-index:2001;
+
+}
+
+.menu-toggle:hover{
+
+    color:#d4af37;
+
+    transform:rotate(90deg);
+
+}
+@media (max-width:768px){
+
+    .menu-toggle{
+
+        display:block;
+
+        background:none;
+
+        border:none;
+
+        color:#fff;
+
+        font-size:2rem;
+
+        cursor:pointer;
+
+        z-index:2001;
+
+    }
+
+    #nav{
+
+        position:fixed;
+
+        top:0;
+
+        right:-100%;
+
+        width:280px;
+
+        height:100vh;
+
+        background:#000;
+
+        border-left:2px solid #d4af37;
+
+        display:flex;
+
+        flex-direction:column;
+
+        justify-content:flex-start;
+
+        align-items:flex-start;
+
+        padding:100px 35px;
+
+        gap:30px;
+
+        transition:.4s ease;
+
+        z-index:2000;
+
+    }
+
+    #nav.open{
+
+        right:0;
+
+    }
+
+    #nav a{
+
+        font-size:1.4rem;
+
+        font-weight:600;
+
+        width:100%;
+
+        padding:10px 0;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .logo-text{
+
+        display:none;
+
+    }
+
+    .navbar-logo{
+
+        width:65px;
+
+    }
+
+}
+
+/* ==========================================
+   OVERLAY
+========================================== */
+
+.nav-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s;
+
+    z-index:1999;
+
+}
+
+.nav-overlay.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}

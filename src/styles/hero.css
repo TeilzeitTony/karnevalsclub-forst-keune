@@ -224,9 +224,11 @@
 
 .button:hover{
 
-    transform:translateY(-3px);
+    transform:translateY(-4px);
 
-    box-shadow:0 12px 30px rgba(212,175,55,.35);
+    background:#e5c14d;
+
+    box-shadow:0 12px 35px rgba(212,175,55,.35);
 
 }
 
