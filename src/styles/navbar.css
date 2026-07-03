@@ -8,6 +8,12 @@
 
     top:0;
 
+    left:0;
+
+    width:100%;
+
+    box-sizing:border-box;
+
     z-index:1000;
 
     display:flex;
@@ -151,6 +157,10 @@
    HAMBURGER
 ========================================== */
 
+/* ==========================================
+   HAMBURGER
+========================================== */
+
 .menu-toggle{
 
     display:none;
@@ -165,42 +175,14 @@
 
     cursor:pointer;
 
+    transition:.3s;
+
 }
-
-
-
 
 /* ==========================================
    SMARTPHONE NAVIGATION
 ========================================== */
 
-.menu-toggle{
-
-    display:block;
-
-    background:none;
-
-    border:none;
-
-    color:#fff;
-
-    font-size:2.2rem;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-    z-index:2001;
-
-}
-
-.menu-toggle:hover{
-
-    color:#d4af37;
-
-    transform:rotate(90deg);
-
-}
 @media (max-width:768px){
 
     .menu-toggle{
@@ -213,11 +195,21 @@
 
         color:#fff;
 
-        font-size:2rem;
+        font-size:2.2rem;
 
         cursor:pointer;
 
+        transition:.3s;
+
         z-index:2001;
+
+    }
+
+    .menu-toggle:hover{
+
+        color:#d4af37;
+
+        transform:rotate(90deg);
 
     }
 
@@ -249,7 +241,7 @@
 
         gap:30px;
 
-        transition:.4s ease;
+        transition:right .35s ease;
 
         z-index:2000;
 
@@ -263,13 +255,13 @@
 
     #nav a{
 
+        width:100%;
+
+        padding:12px 0;
+
         font-size:1.4rem;
 
         font-weight:600;
-
-        width:100%;
-
-        padding:10px 0;
 
         border-bottom:1px solid rgba(255,255,255,.08);
 
@@ -284,6 +276,8 @@
     .navbar-logo{
 
         width:65px;
+
+        height:65px;
 
     }
 

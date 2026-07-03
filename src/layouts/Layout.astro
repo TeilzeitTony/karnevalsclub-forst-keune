@@ -15,44 +15,17 @@ const { title } = Astro.props;
 <html lang="de">
 
 <head>
+
     <meta charset="UTF-8" />
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     />
 
     <title>{title}</title>
+
 </head>
-
-<script>
-
-const observer = new IntersectionObserver((entries) => {
-
-    entries.forEach((entry) => {
-
-        if(entry.isIntersecting){
-
-            entry.target.classList.add("show");
-
-        }
-
-    });
-
-},{
-    threshold:.15
-});
-
-document.querySelectorAll(
-    ".group-card, .team-card, .album-card, .gallery-grid a, .event-card, .contact-card, .success-card, .dance-card, .media-card"
-).forEach((element)=>{
-
-    element.classList.add("fade-up");
-
-    observer.observe(element);
-
-});
-
-</script>
 
 <body>
 
@@ -65,6 +38,36 @@ document.querySelectorAll(
     <Footer />
 
     <PhotoSwipeInit />
+
+    <script>
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("show");
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.15
+        });
+
+        document.querySelectorAll(
+            ".group-card, .team-card, .album-card, .gallery-grid a, .event-card, .contact-card, .success-card, .dance-card, .media-card"
+        ).forEach((element) => {
+
+            element.classList.add("fade-up");
+
+            observer.observe(element);
+
+        });
+
+    </script>
 
 </body>
 
