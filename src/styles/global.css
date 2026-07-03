@@ -938,13 +938,25 @@ nav a:hover{
 
     position:relative;
 
-    border-radius:20px;
-
     overflow:hidden;
 
-    cursor:pointer;
+    border-radius:22px;
+
+    background:#222;
+
+    text-decoration:none;
 
     transition:.35s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+.album-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(212,175,55,.35);
 
 }
 
@@ -952,11 +964,13 @@ nav a:hover{
 
     width:100%;
 
-    height:420px;
+    height:320px;
 
     object-fit:cover;
 
-    transition:.5s;
+    display:block;
+
+    transition:.4s;
 
 }
 
@@ -970,8 +984,6 @@ nav a:hover{
 
 .album-card:hover img{
 
-    filter:grayscale(0);
-
     transform:scale(1.08);
 
 }
@@ -981,12 +993,19 @@ nav a:hover{
     position:absolute;
 
     left:0;
+
     right:0;
+
     bottom:0;
 
-    padding:30px;
+    padding:25px;
 
-    background:linear-gradient(transparent,rgba(0,0,0,.95));
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.92)
+    );
+
+    color:white;
 
 }
 
@@ -1005,6 +1024,25 @@ nav a:hover{
     font-size:30px;
 
 }
+
+.album-year{
+
+    display:inline-block;
+
+    background:#d4af37;
+
+    color:#111;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    font-weight:bold;
+
+    margin-bottom:12px;
+
+}
+
 /* ===========================
    FOOTER
 =========================== */
@@ -2243,33 +2281,59 @@ backdrop-filter:blur(6px);
 
 }
 
-/* ===========================
+/* ==========================
    ALICE GALERIE
-=========================== */
+========================== */
 
 .alice-gallery{
 
     display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
-    gap:25px;
+    gap:22px;
 
-    margin-top:50px;
+    max-width:1400px;
+
+    margin:50px auto;
 
 }
 
-  .alice-gallery img{
+.alice-gallery a{
+
+    display:block;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    text-decoration:none;
+
+}
+
+.alice-gallery img{
 
     width:100%;
 
-    transition:.5s;
+    aspect-ratio:4/3;
+
+    object-fit:cover;
+
+    display:block;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+    transition:transform .35s ease, box-shadow .35s ease;
 
 }
 
 .alice-gallery img:hover{
 
     transform:scale(1.05);
+
+    box-shadow:0 18px 40px rgba(212,175,55,.35);
 
 }
 
@@ -3915,6 +3979,42 @@ span{
     padding:18px;
 
     border-top:1px solid rgba(255,255,255,.1);
+
+}
+
+.album-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.album-card img{
+
+    height:240px;
+
+}
+
+.album-overlay{
+
+    padding:18px;
+
+}
+
+/* ==========================
+   ALICE GALERIE SMARTPHONE
+========================== */
+
+.alice-gallery{
+
+    grid-template-columns:1fr;
+
+    gap:18px;
+
+}
+
+.alice-gallery img{
+
+    border-radius:16px;
 
 }
 
