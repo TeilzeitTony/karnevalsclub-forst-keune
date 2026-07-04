@@ -891,3 +891,46 @@
     }
 
 }
+
+/* ==========================
+   Presse & Medien
+========================== */
+
+.media-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    column-gap:30px;
+    row-gap:50px;
+    margin-top:2rem;
+}
+
+.media-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:28px;
+    background:#161616;
+    border:2px solid rgba(212,175,55,.15);
+    border-radius:20px;
+    text-decoration:none;
+    color:white;
+    transition:.3s ease;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.media-card:hover{
+    transform:translateY(-6px);
+    border-color:#d4af37;
+    box-shadow:0 15px 35px rgba(212,175,55,.2);
+}
+
+.media-icon{
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+.media-link{
+    margin-top:1.5rem;
+    color:#d4af37;
+    font-weight:600;
+}
