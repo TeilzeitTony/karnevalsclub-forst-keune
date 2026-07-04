@@ -1076,3 +1076,106 @@
     letter-spacing:2px;
     font-weight:700;
 }
+
+.dance-content{
+    text-align:center;
+    padding:24px;
+}
+
+.dance-year{
+    display:block;
+    margin-bottom:12px;
+    color:#d4af37;
+    font-weight:700;
+    font-size:.95rem;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.dance-content h3{
+    margin-bottom:16px;
+    color:#d4af37;
+}
+
+.dance-content p{
+    max-width:520px;
+    margin:0 auto;
+    line-height:1.7;
+    color:#ddd;
+}
+
+.secret-dance{
+    margin-top:90px;
+}
+
+/* ==========================
+   Saison-Trenner
+========================== */
+
+.season-divider{
+    margin:90px auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:30px;
+}
+
+.divider-line{
+    flex:1;
+    max-width:220px;
+    height:2px;
+    background:linear-gradient(
+        to right,
+        transparent,
+        #d4af37,
+        transparent
+    );
+}
+
+.divider-content{
+    text-align:center;
+    max-width:420px;
+}
+
+.divider-icon{
+    display:block;
+    font-size:2.2rem;
+    margin-bottom:12px;
+}
+
+.divider-content h3{
+    color:#d4af37;
+    font-size:1.8rem;
+    margin-bottom:10px;
+    letter-spacing:2px;
+}
+
+.divider-content p{
+    color:#bfbfbf;
+    line-height:1.7;
+}
+
+.dance-content{
+    text-align:center;
+}
+
+.dance-content p{
+    max-width:560px;
+    margin:0 auto;
+    line-height:1.7;
+}
+
+@media(max-width:768px){
+
+    .season-divider{
+        flex-direction:column;
+        gap:20px;
+        margin:70px auto;
+    }
+
+    .divider-line{
+        width:180px;
+        flex:none;
+    }
+
+}
