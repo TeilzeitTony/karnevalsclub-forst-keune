@@ -371,39 +371,28 @@
 ========================================== */
 
 .flyer-card{
-
-    display:flex;
-
-    justify-content:center;
-
-    margin:45px auto;
-
+    width: min(100%, 950px);
+    margin: 2rem auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
 }
 
 .flyer-card img{
-
-    width:320px;
-
-    max-width:100%;
-
-    border-radius:20px;
-
-    box-shadow:0 15px 40px rgba(0,0,0,.45);
-
-    transition:.35s;
-
-    cursor:pointer;
-
-
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform .4s ease;
 }
 
+.flyer-card:hover img{
+    transform: scale(1.02);
+}
 
-.flyer-card img:hover{
-
-    transform:translateY(-6px) scale(1.03);
-
-    box-shadow:0 22px 55px rgba(212,175,55,.20);
-
+@media (min-width: 1200px){
+    .flyer-card{
+        width: min(100%, 1100px);
+    }
 }
 
 /* ==========================================
