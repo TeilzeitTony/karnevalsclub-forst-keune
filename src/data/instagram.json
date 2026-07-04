@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "title": "Hallo Forst – wir sind da!",
+    "caption": "Willkommen auf der offiziellen Instagram-Seite des Karnevalsclubs Forst-Keune. Wir freuen uns auf alles, was vor uns liegt.",
+    "date": "04.07.2026",
+    "image": "/instagram/willkommen.jpg"
+  },
+  {
+    "id": 2,
+    "title": "KCK Summer Night",
+    "caption": "Unsere Summer Night steht vor der Tür. Wir freuen uns auf einen unvergesslichen Abend mit euch.",
+    "date": "12.09.2026",
+    "image": "/instagram/summernight.jpg"
+  }
+]
