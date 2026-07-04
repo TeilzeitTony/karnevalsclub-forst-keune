@@ -371,7 +371,7 @@
 ========================================== */
 
 .flyer-card{
-    width: min(100%, 800px);
+    width: min(100%, 750px);
     margin: 2rem auto;
     border-radius: 20px;
     overflow: hidden;
