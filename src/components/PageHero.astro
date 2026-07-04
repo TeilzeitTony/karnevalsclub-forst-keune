@@ -2,7 +2,7 @@
 interface Props {
   title: string;
   subtitle: string;
-  image: string;
+  image?: string;
   leftImage?: string;
   rightImage?: string;
 }
@@ -18,7 +18,11 @@ const {
 
 <section
   class="page-hero"
-  style={`background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('${image}')`}
+  style={
+    image
+      ? `background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.70)), url('${image}')`
+      : "background: linear-gradient(rgba(0,0,0,.85), rgba(0,0,0,.85));"
+  }
 >
 
     <div class="page-hero-content">
@@ -54,3 +58,66 @@ const {
     </div>
 
 </section>
+
+<style>
+
+.page-hero{
+    min-height:320px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    text-align:center;
+    padding:4rem 1rem;
+}
+
+.page-hero-content{
+    max-width:1200px;
+    width:100%;
+}
+
+.hero-title-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.hero-center h1{
+    color:#d4af37;
+    font-size:3rem;
+    margin-bottom:.8rem;
+}
+
+.hero-center p{
+    color:#fff;
+    font-size:1.2rem;
+    line-height:1.6;
+}
+
+.hero-side-image{
+    width:140px;
+    height:auto;
+    object-fit:contain;
+}
+
+@media (max-width:768px){
+
+    .hero-center h1{
+        font-size:2.2rem;
+    }
+
+    .hero-center p{
+        font-size:1rem;
+    }
+
+    .hero-side-image{
+        width:90px;
+    }
+
+}
+
+</style>
