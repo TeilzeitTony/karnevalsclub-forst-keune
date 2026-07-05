@@ -2,6 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import PageHero from "../components/PageHero.astro";
 import GalleryGrid from "../components/GalleryGrid.astro";
+
+import alice1 from "../assets/alice/alice1.jpg";
+import alice2 from "../assets/alice/alice2.jpg";
+import alice3 from "../assets/alice/alice3.jpg";
+import alice4 from "../assets/alice/alice4.jpg";
+import alice5 from "../assets/alice/alice5.jpg";
+import alice6 from "../assets/alice/alice6.jpg";
 ---
 
 <Layout title="Alice im Wunderland">
@@ -9,8 +16,9 @@ import GalleryGrid from "../components/GalleryGrid.astro";
 <PageHero
     title="Alice im Wunderland"
     subtitle="Showprogramm 2026 / 2027"
-    image="/galerie/alice/alice1.jpg"
+    image={alice1.src}
 />
+
 <section class="container">
 
     <h2>Über das Programm</h2>
@@ -34,14 +42,13 @@ import GalleryGrid from "../components/GalleryGrid.astro";
     </p>
 
     <GalleryGrid
-        folder="/galerie/alice"
         images={[
-            "alice1.jpg",
-            "alice2.jpg",
-            "alice3.jpg",
-            "alice4.jpg",
-            "alice5.jpg",
-            "alice6.jpg"
+            alice1,
+            alice2,
+            alice3,
+            alice4,
+            alice5,
+            alice6
         ]}
     />
 
