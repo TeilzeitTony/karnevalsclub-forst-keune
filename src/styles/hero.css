@@ -84,9 +84,11 @@
 
 .hero-call{
 
-    width:220px;
+    width:250px;
 
     animation:logoRight 1.2s ease;
+
+    margin-top:50px;
 
 }
 
@@ -109,17 +111,12 @@
 }
 
 .hero-divider{
-
-    width:220px;
-
-    height:2px;
-
+    width:100%;
+    max-width:260px; /* oder 280px, je nach Schriftbreite */
+    height:3px;
     background:#d4af37;
-
-    margin:25px auto;
-
-    animation:lineGrow 1.3s ease;
-
+    margin:20px auto;
+    border-radius:999px;
 }
 
 .hero h1{
@@ -248,7 +245,7 @@
 
     text-align:center;
 
-    padding:70px 20px;
+    padding:70px 20px 5px;;
 
     background-size:cover;
 

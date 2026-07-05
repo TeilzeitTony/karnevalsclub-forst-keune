@@ -48,9 +48,9 @@
 
 .navbar-logo{
 
-    width:75px;
+    width:100px;
 
-    height:75px;
+    height:100px;
 
     object-fit:contain;
 
@@ -273,13 +273,18 @@
 
     }
 
-    .navbar-logo{
+    .logo-text{
+    display:block;
+}
 
-        width:65px;
+.logo-text h2{
+    font-size:1.3rem;
+    margin:0;
+}
 
-        height:65px;
-
-    }
+.logo-text span{
+    font-size:1,1rem;
+}
 
 }
 
