@@ -168,6 +168,10 @@
 
     }
 
+}.page-hero h1 strong{
+    display:block;
+    color:#d4af37;
+    letter-spacing:3px;
 }
 
 /* ==========================================
@@ -502,6 +506,18 @@
 
     padding:20px;
 
+}
+
+.footer-title{
+    color:#d4af37;
+    font-size:1.5rem;
+    font-weight:700;
+    line-height:1.2;
+    margin-bottom:18px;
+}
+
+.footer h3.footer-title{
+    color:#d4af37;
 }
 
     /* TERMINE */
